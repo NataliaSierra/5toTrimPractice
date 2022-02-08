@@ -1,4 +1,4 @@
-.Si{
+/* .Si{
   margin: 100px;
 }
 
@@ -53,4 +53,8 @@
   transition: 1s;
   filter: grayscale();
   transform: scale(1.3);
+} */
+
+.header{
+  color: #cc00ff;
 }

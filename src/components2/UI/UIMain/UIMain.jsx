@@ -1,10 +1,10 @@
 import React from 'react';
-import img from '../../../components/Img/logo512.png';
+import imgCounter from '../../../components/Img/logo512.png';
 
 export const UIMain = () => {
   return (
-      <div className='image'>
-
-      </div>
-  );
+      <div className='main'>
+          <img src={imgCounter} className='imageMain'></img>
+      </div>  
+  )
 };
