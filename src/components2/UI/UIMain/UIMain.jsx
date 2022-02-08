@@ -1,10 +1,11 @@
 import React from 'react';
-import img from '../../../components/Img/logo512.png';
+import ImgCounter from '../../img/img.png'
+import '../../GeneralStyle.css'
 
 export const UIMain = () => {
   return (
-      <div className='image'>
-
+      <div className='principalImage'>
+        <img src={ImgCounter} className="ImageContent" alt="Img"></img>
       </div>
   );
 };

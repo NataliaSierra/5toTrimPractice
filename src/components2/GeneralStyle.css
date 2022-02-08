@@ -1,0 +1,12 @@
+.ImageContent{
+    display: flexbox;
+    height: 35em;
+}
+.principalImage{
+    display: flex;
+    justify-content: center;
+}
+
+.TextH1{
+    align-content: center;
+}
