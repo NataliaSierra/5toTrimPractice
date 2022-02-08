@@ -5,6 +5,7 @@ export const UIHeader = () => {
   return(
       <div className='UIHeader'>
           <h1 className=''>CounterApp</h1>
+          <h1>add</h1>
       </div>    
   )
 };
