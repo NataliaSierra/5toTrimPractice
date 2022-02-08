@@ -9,4 +9,5 @@
 
 .TextH1{
     align-content: center;
+    filter: brightness();
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../GeneralStyle.css'
 
-export const UIButtons = ({nameButtons, classButtons}) => {
+export const UIButtons = ({nameButtons, classButtons, FunctionOnClick}) => {
   return ( 
   <div className='Container'>
-     <button className={classButtons}>{nameButtons}</button>
+     <button onClick={FunctionOnClick} className={classButtons}>{nameButtons}</button>
   </div>
   )
 };
