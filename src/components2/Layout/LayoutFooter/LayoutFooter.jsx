@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import UIButtons from '../../../components2/UI/UIButtons/UIButtons';
 import ImgCounter from '../../img/img.png'
+import '../../GeneralStyle.css'
 
 export const LayoutFooter = () => {
 
@@ -30,12 +31,14 @@ export const LayoutFooter = () => {
   return (
       <div>
         <div className='principalImage'>
-        <img id='ImgEffect' src={ImgCounter} className="ImageContent" alt="Img"></img>
-      </div>
-        <h1>{Counting}</h1>
-          <UIButtons FunctionOnClick={addCount} classButtons = "btnAdd" nameButtons= "+"></UIButtons>
-          <UIButtons FunctionOnClick={resetCount} classButtons = "btnReset" nameButtons= "Reset"></UIButtons>
-          <UIButtons FunctionOnClick={substractCount} classButtons = "btnSubstract" nameButtons= "-"></UIButtons>
+          <img id='ImgEffect' src={ImgCounter} className="ImageContent" alt="Img"></img>
+        </div>
+        <h1 className='counterId'>{Counting}</h1>
+        <div className="containButtons">
+            <UIButtons FunctionOnClick={addCount} classButtons = "btnAdd" nameButtons= "+"></UIButtons>
+            <UIButtons FunctionOnClick={resetCount} classButtons = "btnReset" nameButtons= "Reset"></UIButtons>
+            <UIButtons FunctionOnClick={substractCount} classButtons = "btnSubstract" nameButtons= "-"></UIButtons>
+        </div>
       </div>
   );
   };

@@ -11,3 +11,11 @@
     align-content: center;
     filter: brightness();
 }
+.containButtons{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+.counterId{
+    text-align: center;
+}
