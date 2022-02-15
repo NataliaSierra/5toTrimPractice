@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
-import { HomePage } from '../src/components/Page/HomePage/HomePage'
+
 import App from './App';
 
 
