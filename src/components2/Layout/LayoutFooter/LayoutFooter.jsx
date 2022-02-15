@@ -21,9 +21,13 @@ export const LayoutFooter = () => {
 
     if (Counting >= 100) {
       Image.style.filter = 'brightness()'
+      Image.classList.add('BoxShadow')
+      Image.classList.remove('BoxShadowInactive')
     } 
     else {
       Image.style.filter = 'grayscale()'
+      Image.classList.remove('BoxShadow')
+      Image.classList.add('BoxShadowInactive')
     }
 
   })
@@ -33,7 +37,7 @@ export const LayoutFooter = () => {
         <div className='principalImage'>
           <img id='ImgEffect' src={ImgCounter} className="ImageContent" alt="Img"></img>
         </div>
-        <h1 className='counterId'>{Counting}</h1>
+        <h1 id="Counter" className='counterId'>{Counting}</h1>
         <div className="containButtons">
             <UIButtons FunctionOnClick={addCount} classButtons = "btnAdd" nameButtons= "+"></UIButtons>
             <UIButtons FunctionOnClick={resetCount} classButtons = "btnReset" nameButtons= "Reset"></UIButtons>
